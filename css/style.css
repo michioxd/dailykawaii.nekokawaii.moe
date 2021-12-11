@@ -112,8 +112,7 @@ body {
     background: rgba(33, 33, 33, 0.727);
     margin-bottom: 1rem;
     border-radius: 2px;
-    display: none;
-    cursor: pointer;
+      cursor: pointer;
 }
 
 .container .player .sec1 .timeline .progress {
@@ -127,7 +126,7 @@ body {
 }
 
 .container .player .sec1 .controls {
-    display: none;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
