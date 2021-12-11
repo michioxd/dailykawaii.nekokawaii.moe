@@ -28,6 +28,7 @@ $(document).ready(function() {
             $('.player').html(`
             <div class="sec1">
                 <div class="artwork">
+                    <div class="overlay">Loading...</div>
                     <div class="inner"></div>
                 </div>
                 <div class="timeline">
@@ -83,6 +84,7 @@ $(document).ready(function() {
             audio.addEventListener(
                 "loadeddata",
                 () => {
+                    $('.container .player .sec1 .artwork .overlay').addClass('hide');
                     $('.container .player .sec1 .controls').css('display', 'flex');
                     $('.container .player .sec1 .timeline').show();
                     $('.duration .totalTime').html(getTimeCodeFromNum(audio.duration));
